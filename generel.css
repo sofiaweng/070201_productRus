@@ -21,12 +21,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-h1 {
-  margin: 8px;
+
+.overskrift {
+  margin: 2rem;
+  text-align: center;
 }
 .produkt {
   border: 1px solid lightgray;
-  margin: 8px;
+  margin: 5px;
 }
 .produkt a {
   text-decoration: none;
@@ -63,9 +65,10 @@ h1 {
   padding: 0.8rem;
   text-align: center;
   width: 88%;
+  transition: 0.3s;
 }
 .save {
-  border: 1px solid rgb(23, 64, 153);
+  border: 1px solid #214191;
   width: 12%;
   color: transparent;
   display: grid;
@@ -74,6 +77,10 @@ h1 {
   padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
+}
+.addtobag:hover {
+  background-color: #305ccb;
+  transition: 0.3s;
 }
 .heart {
   background-image: url(img/heart_default.webp);
