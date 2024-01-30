@@ -1,0 +1,86 @@
+/*----------menu-------------*/
+
+/*navigationsbar*/
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+/*menuknapperne i navigationsbar*/
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+/*logo*/
+.nav-branding {
+  width: 8ch;
+  margin-left: 5px;
+}
+/*hamburgermenu*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 2ch;
+}
+.bar {
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--red);
+  border-radius: 2px;
+}
+.nav-link {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/*-------------mobil---------------*/
+@media (max-width: 700px) {
+  /*-----------BURGERMENU SETTINGS----------*/
+  .hamburger {
+    display: block;
+  }
+  /*de tre streger bliver til et kryds*/
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  /*menu settings, standard gør den ikke synlig*/
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 9.1ch;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--pink);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  /*kommer frem, når den er active*/
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    margin: 35px 16px;
+    border-bottom: var(--red) 1px solid;
+  }
+}
