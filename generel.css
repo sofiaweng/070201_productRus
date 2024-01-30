@@ -11,3 +11,45 @@ video {
   height: auto;
   display: block;
 }
+/*------------------------*/
+
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.produkt a {
+  text-decoration: none;
+  color: black;
+}
+.produktdeskription {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.produkt:hover {
+  border: 1px solid black;
+}
+.discount .produktpris :first-child {
+  color: red;
+}
+
+.discount .produktpris :last-child {
+  text-decoration: line-through;
+  color: rgb(124, 122, 122);
+}
+.soldout {
+  filter: grayscale(100%);
+}
+.status {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+}
+@media (min-width: 700px) {
+  main {
+    width: 95%;
+    margin: auto;
+  }
+  .produktliste {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
