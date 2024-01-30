@@ -75,7 +75,7 @@ li {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    border-top: 1px solid rgb(234, 232, 232);
+    border-top: 1px solid lightgray;
     z-index: 1;
   }
   /*kommer frem, når den er active*/
@@ -89,7 +89,7 @@ li {
 
   .nav-item {
     padding: 1rem;
-    border-bottom: 1px solid rgb(234, 232, 232);
+    border-bottom: 1px solid lightgray;
   }
 }
 

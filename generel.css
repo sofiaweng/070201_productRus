@@ -96,7 +96,12 @@ body {
   background-image: url(img/heart_active.webp);
   transition: 0.2s;
 }
+/*kategoriside*/
 
+.kategori .produkt {
+  margin: none;
+  border: none;
+}
 @media (min-width: 700px) {
   main {
     width: 95%;
