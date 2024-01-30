@@ -12,11 +12,22 @@ video {
   display: block;
 }
 /*------------------------*/
-
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+/*.produkt {
+  border: 1px solid lightgray;
+  margin: 2px;
+}*/
 .produkt a {
   text-decoration: none;
   color: black;

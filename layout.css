@@ -1,12 +1,18 @@
 /*----------menu-------------*/
-
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 /*navigationsbar*/
 .navbar {
+  background-color: white;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid lightgray;
 }
 /*menuknapperne i navigationsbar*/
 .nav-menu {
@@ -32,11 +38,12 @@
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--red);
+  background-color: black;
   border-radius: 2px;
 }
 .nav-link {
   text-decoration: none;
+  color: black;
 }
 li {
   list-style: none;
@@ -64,10 +71,11 @@ li {
     top: 9.1ch;
     gap: 0;
     flex-direction: column;
-    background-color: var(--pink);
+    background-color: white;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    border-top: 1px solid rgb(234, 232, 232);
     z-index: 1;
   }
   /*kommer frem, når den er active*/
@@ -76,11 +84,11 @@ li {
   }
 
   .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .nav-item {
-    margin: 35px 16px;
-    border-bottom: var(--red) 1px solid;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(234, 232, 232);
   }
 }
