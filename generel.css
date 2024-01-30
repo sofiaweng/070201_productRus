@@ -90,7 +90,8 @@ body {
   margin: auto;
   transition: 0.2s;
 }
-.heart:hover {
+.heart:hover,
+.activeheart {
   background-image: url(img/heart_active.webp);
   transition: 0.2s;
 }

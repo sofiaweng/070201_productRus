@@ -12,3 +12,17 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navmenu.classList.remove("active");
   })
 );
+const save = document.querySelector(".save");
+const heart = document.querySelector(".heart");
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+  console.log("sidenvises");
+  save.addEventListener("click", clickSave);
+}
+
+function clickSave() {
+  console.log("clickSave");
+  heart.classList.toggle("activeheart");
+}
