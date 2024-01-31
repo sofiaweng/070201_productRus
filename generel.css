@@ -39,7 +39,8 @@ body {
 .produktdeskription {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
-.produkt:hover {
+.produkt:hover,
+.kategori .produkt:hover {
   border: 1px solid black;
 }
 .discount .produktpris :first-child {
