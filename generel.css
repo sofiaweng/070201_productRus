@@ -21,7 +21,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.produkttitel {
+  color: #214191;
+}
 .overskrift {
   margin: 2rem;
   text-align: center;
@@ -42,11 +44,11 @@ body {
 }
 .discount .produktpris :first-child {
   color: red;
-  margin-right: 5px;
 }
 
 .discount .produktpris :last-child {
   text-decoration: line-through;
+  margin-left: 5px;
   color: rgb(124, 122, 122);
 }
 .soldout {
@@ -117,5 +119,16 @@ body {
   }
   .price {
     text-align: end;
+  }
+  .liste .produktdeskription {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+  }
+  .produktpris {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
   }
 }
