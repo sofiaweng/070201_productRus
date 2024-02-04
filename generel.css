@@ -55,10 +55,15 @@ body {
 .soldout {
   filter: grayscale(100%);
 }
-.status {
+.soldout .status {
+  display: inherit;
   position: absolute;
   right: 0;
   padding: 1rem;
+}
+
+.status {
+  display: none;
 }
 /*PRODUKTSIDE*/
 
