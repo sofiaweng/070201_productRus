@@ -22,6 +22,10 @@ function showProduct(product) {
   copy.querySelector(".produkttitel").textContent = product.productdisplayname;
   // copy.querySelector("img").src = product.brandimage;
   copy.querySelector(".prevprice").textContent = product.price + "DKK";
+  copy
+    .querySelector(".productlink")
+    .setAttribute("href", `product.html?id=${product.id}`);
+
   if (product.soldout) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldout");
