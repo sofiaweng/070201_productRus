@@ -20,11 +20,14 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector(".produkttitel").textContent = product.productdisplayname;
-  // copy.querySelector("img").src = product.brandimage;
+  copy.querySelector(
+    ".produktimg"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector(".prevprice").textContent = product.price + "DKK";
+
   copy
     .querySelector(".productlink")
-    .setAttribute("href", `product.html?id=${product.id}`);
+    .setAttribute("href", `produkt.html?id=${product.id}`);
 
   if (product.soldout) {
     //produktet er udsolgt
