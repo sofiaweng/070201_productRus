@@ -49,7 +49,7 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector(".produkttitel").textContent = product.productdisplayname;
-  // copy.querySelector("img").src = product.smallimage
+  // copy.querySelector("img").src = product.brandimage;
   copy.querySelector(".prevprice").textContent = product.price + "DKK";
   if (product.soldout) {
     //produktet er udsolgt
