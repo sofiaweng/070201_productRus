@@ -12,11 +12,23 @@ video {
   display: block;
 }
 /*------------------------*/
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 1rem;
+}
+.breadcrumbs li a {
+  color: #214191;
+}
+.breadcrumbs li {
+  color: #000000;
+}
 .produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,7 +37,7 @@ body {
   color: #214191;
 }
 .overskrift {
-  margin: 2rem;
+  margin: 1.5rem;
   text-align: center;
 }
 .produkt {
