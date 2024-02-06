@@ -121,6 +121,7 @@ body {
   background-image: url(img/heart_active.webp);
   transition: 0.2s;
 }
+
 /*kategoriside*/
 
 .kategori .produkt {
@@ -128,6 +129,25 @@ body {
   border: none;
 }
 
+.categories li {
+  margin: 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border-bottom: #214191 1px solid;
+  transition: 0.2s;
+}
+.categories li a {
+  text-decoration: none;
+  color: #214191;
+  transition: 0.2s;
+}
+.categories li:hover a {
+  color: #9ba0aa;
+  transition: 0.2s;
+}
+.categories li:hover {
+  border-bottom: #305ccb 1px solid;
+  transition: 0.2s;
+}
 /*comp version*/
 @media (min-width: 700px) {
   main {
