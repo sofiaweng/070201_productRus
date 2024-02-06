@@ -78,7 +78,9 @@ body {
   display: none;
 }
 /*PRODUKTSIDE*/
-
+.produktside {
+  margin-top: 2rem;
+}
 .addtobag {
   background-color: #214191;
   color: white;
