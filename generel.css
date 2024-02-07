@@ -19,15 +19,18 @@ body {
 }
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 5px;
   margin-top: 1rem;
+  justify-content: center;
 }
 .breadcrumbs li a {
   color: #214191;
+  transition: ease-in-out 0.2s;
 }
-.breadcrumbs li {
-  color: #000000;
+.breadcrumbs li a:hover {
+  color: #9ba0aa;
+  transition: ease-in-out 0.2s;
 }
 .produktliste {
   display: grid;
@@ -79,7 +82,7 @@ body {
 }
 /*PRODUKTSIDE*/
 .produktside {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .addtobag {
   background-color: #214191;

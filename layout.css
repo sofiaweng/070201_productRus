@@ -43,7 +43,12 @@ header {
 }
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #214191;
+  transition: ease-in-out 0.2s;
+}
+.nav-link:hover {
+  color: #9ba0aa;
+  transition: ease-in-out 0.2s;
 }
 li {
   list-style: none;
