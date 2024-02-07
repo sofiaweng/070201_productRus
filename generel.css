@@ -25,11 +25,11 @@ body {
   justify-content: center;
 }
 .breadcrumbs li a {
-  color: #214191;
+  color: #305ccb;
   transition: ease-in-out 0.2s;
 }
 .breadcrumbs li a:hover {
-  color: #9ba0aa;
+  color: #a4b5df;
   transition: ease-in-out 0.2s;
 }
 .produktliste {

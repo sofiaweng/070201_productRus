@@ -22,7 +22,7 @@ header {
 }
 /*logo*/
 .nav-branding {
-  width: 8ch;
+  width: 20ch;
   margin-left: 5px;
 }
 /*hamburgermenu*/
@@ -47,7 +47,7 @@ header {
   transition: ease-in-out 0.2s;
 }
 .nav-link:hover {
-  color: #9ba0aa;
+  color: #a4b5df;
   transition: ease-in-out 0.2s;
 }
 li {
