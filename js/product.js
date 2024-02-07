@@ -13,7 +13,9 @@ function showProduct(product) {
     product.productdisplayname;
   document.querySelector(".category").textContent = product.category;
   document.querySelector(".prevprice").textContent = product.price + "DKK";
-
+  document.querySelector(
+    ".category"
+  ).href = `produktliste.html?category=${product.category}`;
   var discountedPrice =
     product.price * ((100 - product.discount) / 100).toFixed(2);
   if (product.discount) {
