@@ -1,9 +1,13 @@
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
 //fetche, her fetchher jeg json
-fetch("https://kea-alt-del.dk/t7/api/products?limit=20")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=20&category=" + category)
   //når vi har fetched, vil vi gerne have json ud af headers (res = resultat)
   .then((res) => res.json())
   //nu har vi dataen og kan arbejde med den ved at lave en funktion ud af det
-  .then(showProducts);
+  .then(showProducts)
+  .then(showHeader);
 //det som er i parantes forstås, som function modtager en array af products
 
 function showProducts(products) {
@@ -15,7 +19,7 @@ function showProduct(product) {
   console.log(product);
   //clone, ændre & appende
   //fang template
-  const template = document.querySelector("template").content;
+  const template = document.querySelector("#produkttemplate").content;
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
@@ -45,4 +49,9 @@ function showProduct(product) {
   //append
   const parent = document.querySelector(".produktliste");
   parent.appendChild(copy);
+}
+//header
+function showHeader() {
+  document.querySelector(".overskrift").textContent = category;
+  document.querySelector(".category").textContent = category;
 }

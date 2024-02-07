@@ -9,6 +9,9 @@ function showProduct(product) {
   console.log(product);
   document.querySelector(".produkttitel").textContent =
     product.productdisplayname;
+  document.querySelector(".produktbreadcrumb").textContent =
+    product.productdisplayname;
+  document.querySelector(".category").textContent = product.category;
   document.querySelector(".prevprice").textContent = product.price + "DKK";
 
   var discountedPrice =
